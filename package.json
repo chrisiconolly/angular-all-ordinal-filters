@@ -1,0 +1,22 @@
+{
+  "name": "angular-all-ordinal",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^2.1.0",
+    "connect": "~2.9.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-karma": "~0.7.2",
+    "grunt-open": "~0.2.2",
+    "karma-phantomjs-launcher": "~0.1.4",
+    "karma-coverage": "~0.2.7",
+    "karma-jasmine": "~0.1.5"
+  }
+}
