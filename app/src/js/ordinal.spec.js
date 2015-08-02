@@ -207,5 +207,14 @@ describe('Ordinal filters', function () {
         // Assert.
         expect(result).toEqual(expected);
       });
+
+    it('should return correct oridinals when testing ordinal test 3',
+      function () {
+        // Act.
+        var result = $filter('ordinaltest3')(number, 'ordinaltest3');
+
+        // Assert.
+        expect(result).toEqual(expected);
+      });
   });
 });

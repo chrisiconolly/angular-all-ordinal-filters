@@ -37,4 +37,11 @@ angular
 
       return "th";
     };
+  })
+
+  .filter('ordinaltest3', function () {
+    return function (n) {
+      return n < 11 || n > 13 ?
+        ['st', 'nd', 'rd', 'th'][Math.min((n - 1) % 10, 3)] : 'th';
+    };
   });
