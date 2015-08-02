@@ -4,17 +4,13 @@ Angual ordinal filters
 
 Project status
 ------------
-*Tests Failing*
 
 Using all the proposed solutions from http://stackoverflow.com/questions/13627308/add-st-nd-rd-and-th-ordinal-suffix-to-a-number. My object is to create each of these functions as angular filters, test them all and then performance test them.
 
 Currently implemented:
 - Salman A
 - nick
-- Johnny (failing tests)
-
-We've now implemented 3 methods to get the ordinal value for a given number, we have Jamiec's solution as that was a specific solution the original question, but no good for us. The latest mmethod from Johnny does not work with the teen numbers past 100.
-
+- Johnny (modified)
 
 
 Setup

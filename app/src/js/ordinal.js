@@ -40,8 +40,9 @@ angular
   })
 
   .filter('ordinaltest3', function () {
-    return function (n) {
-      return n < 11 || n > 13 ?
+    return function (input) {
+      var n = input % 100;
+      return n === 0 ? 'th' : (n < 11 || n > 13) ?
         ['st', 'nd', 'rd', 'th'][Math.min((n - 1) % 10, 3)] : 'th';
     };
   });
