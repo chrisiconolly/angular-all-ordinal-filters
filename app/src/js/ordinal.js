@@ -3,7 +3,7 @@
 angular
   .module('ordinal', [])
 
-  .filter('ordinaltest1', function () {
+  .filter('salmanOrdinal', function () {
     return function (input) {
       var j = input % 10,
         k = input % 100;
@@ -20,7 +20,7 @@ angular
     };
   })
 
-  .filter('ordinaltest2', function () {
+  .filter('nickOrdinal', function () {
     return function (input) {
       var array = ("" + input).split("").reverse();
 
@@ -39,7 +39,7 @@ angular
     };
   })
 
-  .filter('ordinaltest3', function () {
+  .filter('johnnyOrdinalModified', function () {
     return function (input) {
       var n = input % 100;
       return n === 0 ? 'th' : (n < 11 || n > 13) ?

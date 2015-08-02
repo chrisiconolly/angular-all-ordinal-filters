@@ -190,28 +190,29 @@ describe('Ordinal filters', function () {
   ];
 
   using('number ordinals', ordinalDataProvider, function (number, expected) {
-    it('should return correct oridinals when testing ordinal test 1',
+    it('should return correct oridinals when testing salmanOrdinal filter',
       function () {
         // Act.
-        var result = $filter('ordinaltest1')(number, 'ordinaltest1');
+        var result = $filter('salmanOrdinal')(number, 'salmanOrdinal');
 
         // Assert.
         expect(result).toEqual(expected);
       });
 
-    it('should return correct oridinals when testing ordinal test 2',
+    it('should return correct oridinals when testing nickOrdinal filter',
       function () {
         // Act.
-        var result = $filter('ordinaltest2')(number, 'ordinaltest2');
+        var result = $filter('nickOrdinal')(number, 'nickOrdinal');
 
         // Assert.
         expect(result).toEqual(expected);
       });
 
-    it('should return correct oridinals when testing ordinal test 3',
+    it('should return correct oridinals when testing johnnyOrdinalModified',
       function () {
         // Act.
-        var result = $filter('ordinaltest3')(number, 'ordinaltest3');
+        var result = $filter('johnnyOrdinalModified')(number,
+          'johnnyOrdinalModified');
 
         // Assert.
         expect(result).toEqual(expected);
