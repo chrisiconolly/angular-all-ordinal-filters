@@ -190,12 +190,22 @@ describe('Ordinal filters', function () {
   ];
 
   using('number ordinals', ordinalDataProvider, function (number, expected) {
-    it('should return "st" for the number ' + number, function () {
-      // Act.
-      var result = $filter('ordinal')(number, 'ordinal');
+    it('should return correct oridinals when testing ordinal test 1',
+      function () {
+        // Act.
+        var result = $filter('ordinaltest1')(number, 'ordinaltest1');
 
-      // Assert.
-      expect(result).toEqual(expected);
-    });
+        // Assert.
+        expect(result).toEqual(expected);
+      });
+
+    it('should return correct oridinals when testing ordinal test 2',
+      function () {
+        // Act.
+        var result = $filter('ordinaltest2')(number, 'ordinaltest2');
+
+        // Assert.
+        expect(result).toEqual(expected);
+      });
   });
 });

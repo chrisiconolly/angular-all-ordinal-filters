@@ -4,7 +4,13 @@ Angual ordinal filters
 
 Project status
 ------------
-I've created the first test setup and added an angular filter using the first of proposed solutions from http://stackoverflow.com/questions/13627308/add-st-nd-rd-and-th-ordinal-suffix-to-a-number. The test setup uses a data provider type setup found here: http://blog.jphpsf.com/2012/08/30/drying-up-your-javascript-jasmine-tests this allows us to just write one simple test and inject all the test conditions into it keeping the code cleaner.
+Using all the proposed solutions from http://stackoverflow.com/questions/13627308/add-st-nd-rd-and-th-ordinal-suffix-to-a-number. My object is to create each of these functions as angular filters, test them all and then performance test them.
+
+Currently implemented:
+- Salman A
+- nick
+
+
 
 In order to set the project up follow the guide below
 
