@@ -11,6 +11,7 @@ Currently implemented:
 - Salman A
 - nick
 - Johnny (modified)
+- Fizer Khan
 
 
 Setup

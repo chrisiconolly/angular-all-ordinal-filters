@@ -217,5 +217,14 @@ describe('Ordinal filters', function () {
         // Assert.
         expect(result).toEqual(expected);
       });
+
+    it('should return correct oridinals when testing fizerOrdinal',
+      function () {
+        // Act.
+        var result = $filter('fizerOrdinal')(number, 'fizerOrdinal');
+
+        // Assert.
+        expect(result).toEqual(expected);
+      });
   });
 });

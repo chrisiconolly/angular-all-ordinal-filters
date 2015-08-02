@@ -45,4 +45,12 @@ angular
       return n === 0 ? 'th' : (n < 11 || n > 13) ?
         ['st', 'nd', 'rd', 'th'][Math.min((n - 1) % 10, 3)] : 'th';
     };
+  })
+
+  .filter('fizerOrdinal', function () {
+    return function (input) {
+        var s = ["th", "st", "nd", "rd"],
+        n = input % 100;
+        return (s[(n - 20) % 10] || s[n] || s[0]);
+      };
   });
