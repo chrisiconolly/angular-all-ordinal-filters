@@ -5,14 +5,9 @@ Angual ordinal filters
 Project status
 ------------
 
-Using all the proposed solutions from http://stackoverflow.com/questions/13627308/add-st-nd-rd-and-th-ordinal-suffix-to-a-number. My object is to create each of these functions as angular filters, test them all and then performance test them.
+I have taken 4 solutions from http://stackoverflow.com/questions/13627308/add-st-nd-rd-and-th-ordinal-suffix-to-a-number. I've now use these to create angular filters they all have unit tests and are now performance tested here: http://jsfiddle.net/cconolly/jybxyxrm/
 
-Currently implemented:
-- Salman A
-- nick
-- Johnny (modified)
-- Fizer Khan
-
+With this information I now am able to choose my favourite function which will be used to drive these ordinal filters. The one I'm going to go with is a modified version of johnny's solution. His native solution didn't pass the unit tests but that was corrected when I added the following commit: https://github.com/chrisiconolly/angular-all-ordinal-filters/commit/515a562ff86be1dec2bf5eca674bd333e2d03028
 
 Setup
 ------------
