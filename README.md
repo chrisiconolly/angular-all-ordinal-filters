@@ -21,16 +21,22 @@ npm install
 bower install
 ```
 
-You can use Grunt to build and test at this point, grunt test will also build the project. To run the current test suite run the following command
+You can use Gulp to build and test at this point, gulp test will also build the project. To run the current test suite run the following command
 
 ```sh
-grunt test
+gulp test
+```
+
+If you want to work on the filters then there is a workflow:dev task, this will build and run tests, create a server and connect to it and also watch for any changes. Changes will trigger a rebuild and test as well as livereloading the browser.
+
+```sh
+gulp workflow:dev
 ```
 
 Project background
 ------------
 
-I've started this project as I couldn't find an angular filter which provided me with what I needed for another project. The following stackoverflow (http://stackoverflow.com/questions/13627308/add-st-nd-rd-and-th-ordinal-suffix-to-a-number) page has multiple different functions to create get an ordinal value for a given number.
+I've started this project as I couldn't find an angular filter which provided me with what I needed for another project. Ordinal filters do exist but didnt give me what I needed. The following stackoverflow (http://stackoverflow.com/questions/13627308/add-st-nd-rd-and-th-ordinal-suffix-to-a-number) page has multiple different functions to create get an ordinal value for a given number.
 
 I decided to take these solutions write tests and measure their performance, the winner would then be the base for what I needed.
 

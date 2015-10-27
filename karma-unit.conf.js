@@ -22,6 +22,9 @@ module.exports = function(config) {
       'bower_components/angular-mocks/angular-mocks.js',
       'js/**/*.js'
     ],
+    browsers: [
+        'PhantomJS'
+    ],
 
     /**
      * How to report, by default.
