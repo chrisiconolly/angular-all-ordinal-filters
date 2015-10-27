@@ -1,6 +1,8 @@
 Angual ordinal filters
 ===========
 
+[![Build Status](https://travis-ci.org/chrisiconolly/angular-all-ordinal-filters.svg?branch=master)](https://travis-ci.org/chrisiconolly/angular-all-ordinal-filters)
+
 This module provides two ordinal filters:
 ```html
 {{number | ordinal}} // 1 -> 1st
