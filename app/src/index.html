@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="js/ordinal.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <title>Angular ordinal filters</title>
+  <script>
+    var app = angular.module('demo', ['ordinal'])
+        .controller('demoCtrl', ['$scope',
+            function ($scope) {
+            $scope.name = 'Tempo ordinal';
+            $scope.range = Array.apply(null, {length: 25}).map(Number.call, Number)
+        }]);
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Anular All Ordinal Demo</h2>
+    <div class="row">
+      <div class="col-md-12">
+        <p>Angular All Ordinal provides you with 2 angular filters which add ordinals to numbers. View the project on <a href="https://github.com/chrisiconolly/angular-all-ordinal-filters" target="_blank">GitHub</a></p>
+      </div>
+      <div class="col-md-6">
+        <h3>Usage</h3>
+          <p>The two filters provided are "ordinal" and "ordinalOnly", you can see their usage below.</p>
+          <pre>{{number | ordinal}} // 1 -&gt; 1st<br>{{number | ordinalOnly}} // 1 -&gt; st</pre>
+      </div>
+      <div class="col-md-6">
+        <h3>Example</h3>
+        <table  ng-app="demo" class="table table-striped table-condensed" ng-controller="demoCtrl">
+          <thead>
+            <tr>
+              <td>Number</td>
+              <td>Ordinal-only</td>
+              <td>Ordinal</td>
+            </tr>
+          </thead>
+          </tbody>
+          <tr ng-repeat="number in range">
+            <td>{{number}}</td>
+            <td>{{number | ordinalOnly}}</td>
+            <td>{{number | ordinal}}</td>
+          </tr>
+          </tbßody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
