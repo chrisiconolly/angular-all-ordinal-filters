@@ -11,6 +11,28 @@ This module provides two ordinal filters:
 {{number | ordinalOnly}} // 1 -> st
 ```
 
+Usage
+------------
+Bower:
+
+```sh
+bower install --save angular-all-ordinal
+```
+
+Add the following line to the `<head>` section of your index.html
+
+```html
+<script src="path/to/angular-all-ordinal.min.js"></script>
+```
+
+Add the `ordinal` directive as a dependency in your application:
+
+```javascript
+angular.module('demo', ['ordinal'])
+```
+
+You can now use the two filters as above! Enjoy young grasshopper!
+
 Setup
 ------------
 
