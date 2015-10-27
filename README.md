@@ -1,4 +1,4 @@
-Angual ordinal filters
+Angular ordinal filters
 ===========
 
 [![Build Status](https://travis-ci.org/chrisiconolly/angular-all-ordinal-filters.svg?branch=master)](https://travis-ci.org/chrisiconolly/angular-all-ordinal-filters)
