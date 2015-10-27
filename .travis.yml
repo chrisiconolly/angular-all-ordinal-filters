@@ -1,9 +1,10 @@
 language: node_js
 node_js:
-  - '0.10.33'
+  - '0.12.2'
 before_script:
+  - 'npm install -g gulp'
+  - 'npm install -g bower'
   - 'npm install'
   - 'bower install'
-  - 'npm install -g gulp'
 script:
   - 'gulp test'
